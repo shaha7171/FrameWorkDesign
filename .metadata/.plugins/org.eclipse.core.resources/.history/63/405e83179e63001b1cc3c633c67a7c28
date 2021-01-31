@@ -1,0 +1,20 @@
+package Rough;
+
+public class Batch1 {
+
+	//public WebDriver driver;
+	
+	/*
+	 * public void test1() {
+	 * 
+	 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+	 * 
+	 * driver.get("https://www.facebook.com/");
+	 * 
+	 * }
+	 */
+
+public static void main(String[] args) {
+	System.out.println("------------------------");
+}
+}

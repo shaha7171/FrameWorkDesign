@@ -29,5 +29,15 @@ public class Batch1 {
 		driver.get("https://www.gmail.com/");
 
 	}
+	
+	@Test
+	public void test3() {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+
+		driver.get("https://www.yahoo.com/");
+
+	}
 
 }

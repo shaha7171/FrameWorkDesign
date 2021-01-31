@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="12857" started-at="2021-01-31T03:19:28 CST" finished-at="2021-01-31T03:19:40 CST">
+  <suite name="Suite" duration-ms="13281" started-at="2021-01-31T04:27:23 CST" finished-at="2021-01-31T04:27:36 CST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="12857" started-at="2021-01-31T03:19:28 CST" finished-at="2021-01-31T03:19:40 CST">
+    <test name="Test" duration-ms="13281" started-at="2021-01-31T04:27:23 CST" finished-at="2021-01-31T04:27:36 CST">
       <class name="Rough.Batch1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:Rough.Batch1@a67c67e]" name="test1" duration-ms="6448" started-at="2021-01-31T03:19:28 CST" finished-at="2021-01-31T03:19:34 CST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:Rough.Batch1@a67c67e]" name="test1" duration-ms="7517" started-at="2021-01-31T04:27:23 CST" finished-at="2021-01-31T04:27:30 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:Rough.Batch1@a67c67e]" name="test2" duration-ms="6316" started-at="2021-01-31T03:19:34 CST" finished-at="2021-01-31T03:19:40 CST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:Rough.Batch1@a67c67e]" name="test2" duration-ms="5700" started-at="2021-01-31T04:27:30 CST" finished-at="2021-01-31T04:27:36 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->

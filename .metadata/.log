@@ -2520,3 +2520,9 @@ java -ea -classpath C:\Users\Vishal\eclipse\jee-2020-12\eclipse\configuration\or
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-31 05:05:17.317
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-31 05:23:07.643
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-01-31 05:23:07.654
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

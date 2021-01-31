@@ -39,6 +39,9 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<systemPropertyVariables>
+					<execBrowser>$(browser)</execBrowser>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 <!-- 			<plugin>

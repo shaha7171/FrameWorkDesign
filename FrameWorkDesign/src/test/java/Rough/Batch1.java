@@ -1,9 +1,11 @@
 package Rough;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -12,39 +14,43 @@ public class Batch1 {
 
 	public WebDriver driver;
 	
+	@Parameters({"browser","url"})
 	@BeforeTest
-	public void setUp() {
+	public void setUp(String browser, String url) {
+		
+		if(browser.equals("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.get(url);
+		} else {
+			System.out.println("Unsupported Browser");
+			Assert.fail();
+		}
 	}
 	
 	@Test
 	public void test1() {
-		driver.get("https://www.facebook.com/");
+		System.out.println("test1");
 	}
 
 	@Test
 	public void test2() {
-		driver.get("https://www.gmail.com/");
+		System.out.println("test2");
 	}
 	
 	@Test
 	public void test3() {
-		driver.get("https://www.gmail.com/");
+		System.out.println("test3");
 	}
 	
 	@Test
 	public void test4() {
-
-		driver.get("https://www.gmail.com/");
-
+		System.out.println("test4");
 	}
 
 	@AfterTest
-	public void test5() {
-
+	public void quit() {
 		driver.close();
-
 	}
 }

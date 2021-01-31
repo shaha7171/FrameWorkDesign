@@ -37,6 +37,7 @@ public class Batch1 {
 	@Test
 	public void test2() {
 		System.out.println("test2");
+		Assert.fail();
 	}
 	
 	@Test

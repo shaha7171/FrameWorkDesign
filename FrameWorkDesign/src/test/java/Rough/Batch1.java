@@ -30,6 +30,24 @@ public class Batch1 {
 
 	}
 	
+	@Test
+	public void test3() {
 
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+
+		driver.get("https://www.gmail.com/");
+
+	}
+	
+	@Test
+	public void test4() {
+
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+
+		driver.get("https://www.gmail.com/");
+
+	}
 
 }

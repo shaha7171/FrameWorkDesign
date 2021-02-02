@@ -42,14 +42,14 @@ public class Batch1 extends SrcBaseTest{
 	
 	@Test
 	public void test1() throws InterruptedException {
-		driver.findElement(By.id("email")).sendKeys("9527137171");
+		driver.findElement(By.id("email")).sendKeys("95271371");
 		test.log(Status.PASS, "entered ID");
 		Thread.sleep(2000);
 	}
 
 	@Test
 	public void test2() throws InterruptedException {
-		driver.findElement(By.id("pass")).sendKeys("9422344944");
+		driver.findElement(By.id("pass")).sendKeys("942244");
 		test.log(Status.PASS, "entered pass");
 		Thread.sleep(2000);
 	//	Assert.fail();

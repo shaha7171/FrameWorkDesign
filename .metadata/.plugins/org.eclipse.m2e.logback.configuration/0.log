@@ -2822,3 +2822,14 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: start tag n
 2021-02-01 02:09:51,806 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
 2021-02-01 02:10:18,939 [Worker-150: Launching MyConfig] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\Vishal\Desktop\SeleniumAutomation\eclipse-workspace\FrameWorkDesign
 2021-02-01 02:10:18,939 [Worker-150: Launching MyConfig] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Dbrowser=chrome -Durl=http://facebook.com/ -DxmlFiles=testng.xml -B clean install
+2021-02-02 02:13:45,298 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-02-02 02:13:54,828 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-02 02:13:54,862 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-02 02:13:54,868 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-02 02:13:54,881 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2021-02-02 02:15:17,564 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-02 02:15:17,611 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-02-02 02:15:17,618 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-02 02:15:17,662 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2021-02-02 02:15:31,423 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-02-02 02:15:31,439 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

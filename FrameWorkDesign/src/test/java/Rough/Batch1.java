@@ -28,7 +28,7 @@ public class Batch1 extends SrcBaseTest{
 	@BeforeTest
 	public void setUp(String browser, String url) throws InterruptedException {
 		
-		if(browser.equals("chrome")) {
+		if(browser.equals("chrome")) {  
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

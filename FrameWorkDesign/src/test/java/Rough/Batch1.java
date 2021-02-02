@@ -49,7 +49,7 @@ public class Batch1 extends SrcBaseTest{
 
 	@Test
 	public void test2() throws InterruptedException {
-		driver.findElement(By.id("pass")).sendKeys("942244");
+		driver.findElement(By.id("pass")).sendKeys("94244");
 		test.log(Status.PASS, "entered pass");
 		Thread.sleep(2000);
 	//	Assert.fail();

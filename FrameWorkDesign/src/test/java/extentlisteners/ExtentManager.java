@@ -1,15 +1,16 @@
 package extentlisteners;
 
 import java.util.Date;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import baseTest.SrcBaseTest;
+import testBase.TestBase;
 
 
 
-public class ExtentManager extends SrcBaseTest {
+public class ExtentManager extends TestBase {
 	/* public static ExtentReports extent; */
 		//ExtentReports is defined in Batch 1 
 	public static ExtentReports setupExtentReport() {

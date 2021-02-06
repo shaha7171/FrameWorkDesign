@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Rough.Batch1" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="insuranceCalc_Motorcycle.EndToEndTests_Motorcycle" hash-for-method="insuranceCalculate({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle...)">insuranceCalculate({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="insuranceCalc_Motorcycle.EndToEndTests_Motorcycle" hash-for-method="insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle...)">insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -118,12 +123,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Rough.Batch1" hash-for-method="test1">test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Rough.Batch1" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="insuranceCalc_Motorcycle.EndToEndTests_Motorcycle" hash-for-method="insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle...)">insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,36 +141,32 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Rough.Batch1</span>
+              <span class="class-name">insuranceCalc_Motorcycle.EndToEndTests_Motorcycle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;logn&apos;]&quot;}
-  (Session info: chrome=88.0.4324.104)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-3BHS2BP&apos;, ip: &apos;192.168.1.141&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Vishal\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6c57d2ef34badb671bfda651b216aa0
-*** Element info: {Using=name, value=logn}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Rough.Batch1.test3(Batch1.java:60)
+                  <a name="insuranceCalculate({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle...)">
+                  </a> <!-- insuranceCalculate({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle...) -->
+                  <span class="method-name">insuranceCalculate</span>
+                  <span class="parameters">({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle_Annual Mileage=100, Product_insurancesum= 3.000.000,00, Vehicle_Date of Manufacture=09/04/1989, Insurant_Hobby=speeding,Other, SelectOption=Ultimate, PriceValidation_Ultimate=1,025.00, PriceValidation_Silver=93.00, Vehicle_Make=Ford, Insurant_occupation=Farmer, Vehicle_No of Seats_motorcycle=2, Insurant_LastName=NNN, Product_OptionalProducts=Euro Protection, Vehicle_Enging Performance=100, Insurant_ImageFilePath=??, Vehicle_Model=Moped, Insurant_country=Sweden, Insurant_zipcode=444061, Product_damageinsurance=Partial Coverage, TC Name=Verify Insurance Premium for Ford Moped, Vehicle_CylinderCapacity=100, PriceValidation_Platinum=538.00, Insurant_FirstName=Savali, Insurant_birthdate=12/12/1956, Insurant_gender=Female})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Pricings are not matching expected [87.00] but found [274.00]
+	at insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate(EndToEndTests_Motorcycle.java:36)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle...)">
+                  </a> <!-- insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle...) -->
+                  <span class="method-name">insuranceCalculate</span>
+                  <span class="parameters">({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle_Annual Mileage=100, Product_insurancesum= 20.000.000,00, Vehicle_Date of Manufacture=09/04/2001, Insurant_Hobby=speeding,Other, SelectOption=Gold, PriceValidation_Ultimate=2,887.00, PriceValidation_Silver=702.00, Vehicle_Make=Volvo, Insurant_occupation=Farmer, Vehicle_No of Seats_motorcycle=2, Insurant_LastName=NNN, Product_OptionalProducts=Euro Protection, Vehicle_Enging Performance=900, Insurant_ImageFilePath=??, Vehicle_Model=Scooter, Insurant_country=Sweden, Insurant_zipcode=444061, Product_damageinsurance=Partial Coverage, TC Name=Verify Insurance Premium for Volvo Scooter, Vehicle_CylinderCapacity=900, PriceValidation_Platinum=1,515.00, Insurant_FirstName=Seema, Insurant_birthdate=12/12/1977, Insurant_gender=Female})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Pricings are not matching expected [702.00] but found [262.00]
+	at insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate(EndToEndTests_Motorcycle.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -179,21 +175,15 @@ Session ID: a6c57d2ef34badb671bfda651b216aa0
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Rough.Batch1</span>
+              <span class="class-name">insuranceCalc_Motorcycle.EndToEndTests_Motorcycle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
+                  <a name="insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle...)">
+                  </a> <!-- insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle...) -->
+                  <span class="method-name">insuranceCalculate</span>
+                  <span class="parameters">({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle_Annual Mileage=100, Product_insurancesum= 5.000.000,00, Vehicle_Date of Manufacture=09/04/2019, Insurant_Hobby=speeding,Other, SelectOption=Silver, PriceValidation_Ultimate=2,604.00, PriceValidation_Silver=236.00, Vehicle_Make=Honda, Insurant_occupation=Farmer, Vehicle_No of Seats_motorcycle=2, Insurant_LastName=NNN, Product_OptionalProducts=Euro Protection, Vehicle_Enging Performance=666, Insurant_ImageFilePath=??, Vehicle_Model=Motorcycle, Insurant_country=India, Insurant_zipcode=444061, Product_damageinsurance=Partial Coverage, TC Name=Verify Insurance Premium for Honda MotorCycle, Vehicle_CylinderCapacity=333, PriceValidation_Platinum=1,367.00, Insurant_FirstName=Prakash, Insurant_birthdate=12/12/1989, Insurant_gender=Male})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,7 +203,7 @@ Session ID: a6c57d2ef34badb671bfda651b216aa0
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Rough.Batch1&quot;/&gt;
+      &lt;class name=&quot;insuranceCalc_Motorcycle.EndToEndTests_Motorcycle&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -255,22 +245,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test2')
-data.setCell(0, 2, 'Rough.Batch1')
-data.setCell(0, 3, 2175);
+data.setCell(0, 1, 'insuranceCalculate')
+data.setCell(0, 2, 'insuranceCalc_Motorcycle.EndToEndTests_Motorcycle')
+data.setCell(0, 3, 18078);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
-data.setCell(1, 2, 'Rough.Batch1')
-data.setCell(1, 3, 2166);
+data.setCell(1, 1, 'insuranceCalculate')
+data.setCell(1, 2, 'insuranceCalc_Motorcycle.EndToEndTests_Motorcycle')
+data.setCell(1, 3, 17056);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3')
-data.setCell(2, 2, 'Rough.Batch1')
-data.setCell(2, 3, 59);
+data.setCell(2, 1, 'insuranceCalculate')
+data.setCell(2, 2, 'insuranceCalc_Motorcycle.EndToEndTests_Motorcycle')
+data.setCell(2, 3, 16572);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -296,29 +286,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Rough.Batch1</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp(chrome, http://facebook.com/)</span>
+              <div class="chronological-class-name">insuranceCalc_Motorcycle.EndToEndTests_Motorcycle</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test1</span>
-                <span class="method-start">9665 ms</span>
+                <span class="method-name">insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2024, PriceValidation_Gold=696.00, TC No=1, Vehicle...)</span>
+                <span class="method-start">9485 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">11834 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">27569 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27570 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test3</span>
-                <span class="method-start">14010 ms</span>
+                <span class="method-name">insuranceCalculate({Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle...)</span>
+                <span class="method-start">33147 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">quit</span>
-                <span class="method-start">14450 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">50095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insuranceCalculate({Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle...)</span>
+                <span class="method-start">60271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">77681 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

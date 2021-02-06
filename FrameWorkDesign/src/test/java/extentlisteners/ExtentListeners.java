@@ -7,19 +7,16 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import baseTest.SrcBaseTest;
+import testBase.TestBase;
 
 
-public class ExtentListeners extends SrcBaseTest implements ITestListener {
+public class ExtentListeners extends TestBase implements ITestListener {
 
 	//ExtentReports,ExtentTest is defined in Batch1
 	/*
@@ -46,7 +43,7 @@ public class ExtentListeners extends SrcBaseTest implements ITestListener {
 		Date d = new Date();
 		String errorImage = "Extent_Report_"+d.toString().replace(":", "_").replace(" ", "_")+".jpeg";
 		
-		String screenShotpath = System.getProperty("user.dir")+"\\src\\test\\resources\\Reports\\"+errorImage;
+		String screenShotpath = System.getProperty("user.dir")+"\\src\\test\\resources\\Reports\\Screenshots\\"+errorImage;
 		
 		File dest = new File(screenShotpath);
 		try {

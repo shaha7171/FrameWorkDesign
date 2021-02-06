@@ -1,17 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.942 s <<< FAILURE! - in TestSuite
-Rough.Batch1.test3  Time elapsed: 0.439 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='logn']"}
-  (Session info: chrome=88.0.4324.104)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3BHS2BP', ip: '192.168.1.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Vishal\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:65004}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a6c57d2ef34badb671bfda651b216aa0
-*** Element info: {Using=name, value=logn}
-	at Rough.Batch1.test3(Batch1.java:60)
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 81.038 s <<< FAILURE! - in TestSuite
+insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate[{Vehicle_List Price=888, Product_startdate=12/12/2025, PriceValidation_Gold=772.00, TC No=2, Vehicle_Annual Mileage=100, Product_insurancesum= 20.000.000,00, Vehicle_Date of Manufacture=09/04/2001, Insurant_Hobby=speeding,Other, SelectOption=Gold, PriceValidation_Ultimate=2,887.00, PriceValidation_Silver=702.00, Vehicle_Make=Volvo, Insurant_occupation=Farmer, Vehicle_No of Seats_motorcycle=2, Insurant_LastName=NNN, Product_OptionalProducts=Euro Protection, Vehicle_Enging Performance=900, Insurant_ImageFilePath=??, Vehicle_Model=Scooter, Insurant_country=Sweden, Insurant_zipcode=444061, Product_damageinsurance=Partial Coverage, TC Name=Verify Insurance Premium for Volvo Scooter, Vehicle_CylinderCapacity=900, PriceValidation_Platinum=1,515.00, Insurant_FirstName=Seema, Insurant_birthdate=12/12/1977, Insurant_gender=Female}](2)  Time elapsed: 16.927 s  <<< FAILURE!
+java.lang.AssertionError: Pricings are not matching expected [702.00] but found [262.00]
+	at insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate(EndToEndTests_Motorcycle.java:37)
+
+insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate[{Vehicle_List Price=1000, Product_startdate=12/12/2025, PriceValidation_Gold=87.00, TC No=3, Vehicle_Annual Mileage=100, Product_insurancesum= 3.000.000,00, Vehicle_Date of Manufacture=09/04/1989, Insurant_Hobby=speeding,Other, SelectOption=Ultimate, PriceValidation_Ultimate=1,025.00, PriceValidation_Silver=93.00, Vehicle_Make=Ford, Insurant_occupation=Farmer, Vehicle_No of Seats_motorcycle=2, Insurant_LastName=NNN, Product_OptionalProducts=Euro Protection, Vehicle_Enging Performance=100, Insurant_ImageFilePath=??, Vehicle_Model=Moped, Insurant_country=Sweden, Insurant_zipcode=444061, Product_damageinsurance=Partial Coverage, TC Name=Verify Insurance Premium for Ford Moped, Vehicle_CylinderCapacity=100, PriceValidation_Platinum=538.00, Insurant_FirstName=Savali, Insurant_birthdate=12/12/1956, Insurant_gender=Female}](3)  Time elapsed: 17.4 s  <<< FAILURE!
+java.lang.AssertionError: Pricings are not matching expected [87.00] but found [274.00]
+	at insuranceCalc_Motorcycle.EndToEndTests_Motorcycle.insuranceCalculate(EndToEndTests_Motorcycle.java:36)
 

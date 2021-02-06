@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Rough.Batch1">
+      <class name="insuranceCalc_Motorcycle.EndToEndTests_Motorcycle">
         <methods>
-          <include name="test3"/>
-          <include name="test2"/>
-          <include name="setUp"/>
-          <include name="test1"/>
-          <include name="quit"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="insuranceCalculate" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- Rough.Batch1 -->
+      </class> <!-- insuranceCalc_Motorcycle.EndToEndTests_Motorcycle -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

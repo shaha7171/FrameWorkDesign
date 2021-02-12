@@ -17,6 +17,7 @@ public class EndToEndTests_Motorcycle extends TestBase {
 	public void insuranceCalculate(Object obj1) throws Exception {
 		
 		//Here explicitly we have converted Object Data in to hashmap
+		@SuppressWarnings("unchecked")
 		HashMap<String,String> testData = (HashMap<String, String>) obj1;
 		
 		test.log(Status.INFO, "Test Data which we have used: "+ testData);
@@ -41,7 +42,7 @@ public class EndToEndTests_Motorcycle extends TestBase {
 		priceOptions.selectPriceOptionPlan(testData.get("SelectOption"));
 		priceOptions.clickOnNextQuoteBtn();
 	} 
-
+//Using Data Provider
 	@DataProvider (name = "vehData")
 	public Object[][] testDataSupplier() throws Exception {
 		Object[][] obj = new Object[excel.getRowCount()][1];
